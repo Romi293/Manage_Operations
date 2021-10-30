@@ -1,0 +1,45 @@
+<resources>
+
+    <string name="app_name">Intents</string>
+
+    <string name="next_btn">Next</string>
+
+    <string name="back_btn">Back</string>
+
+    <string name="name">Enter your name:</string>
+
+    <string name="email">Email:</string>
+
+    <string name="setAlarmTitle">SET ALARM</string>
+
+    <string name="setAlarmBtn">SET</string>
+
+    <string name="searchBtn">Search</string>
+
+    <string name="dialBtn">DIAL</string>
+
+    <string name="textOperation">What kind of operation do you want to do?</string>
+
+    <string name="welcome">Welcome!</string>
+
+    <string name="opsBtn">For more options</string>
+
+    <string name="phoneNum">Phone number</string>
+
+    <string name="URL">URL</string>
+
+    <string name="YES">Yes</string>
+
+    <string name="NO">No</string>
+
+    <string name="search">Search for image</string>
+
+    <string name="searchLocationTitle">SEARCH FOR LOCATION</string>
+
+    <string name="contactTitle">CREATE NEW CONTACT</string>
+
+    <string name="dateEvent">Date</string>
+
+    <string name="hourEvent">Hour</string>
+
+</resources>

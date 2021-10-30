@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/pink">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="213dp"
+        android:layout_height="79dp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:text="@string/welcome"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <android.widget.Button
+        android:id="@+id/dialBtn"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
+        android:onClick="DialByNumber"
+        android:text="@string/dialBtn"
+        android:background="@drawable/button_focused"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561"
+        tools:ignore="OnClick" />
+
+    <android.widget.Button
+        android:id="@+id/searchBtn"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:onClick="SearchByAddress"
+        android:text="@string/searchBtn"
+
+        android:background="@drawable/button_focused"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="190dp"
+        android:layout_height="32dp"
+        android:text="@string/name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/averia_gruesa_libre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/opsText"
+        android:layout_width="347dp"
+        android:layout_height="32dp"
+        android:text="@string/textOperation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:fontFamily="@font/averia_gruesa_libre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <EditText
+        android:id="@+id/addressEditView"
+        android:layout_width="228dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:textSize="18dp"
+        android:hint="@string/URL"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/averia_gruesa_libre"
+        android:background="@drawable/rounded_corners_edittext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/phoneNumEditView"
+        android:layout_width="181dp"
+        android:layout_height="54dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:ems="10"
+        android:textSize="18dp"
+        android:hint="@string/phoneNum"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/averia_gruesa_libre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/micBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:clickable="true"
+        android:onClick="SpeechRecognizer"
+        android:src="@drawable/mic_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <android.widget.Button
+        android:id="@+id/opsBtn"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/opsBtn"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
